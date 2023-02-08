@@ -1,13 +1,14 @@
-import { Button } from "@material-ui/core";
 import { Grid, TextField } from "@mui/material";
 import React from "react";
 import { Style } from "./style";
-import {FileClaimButton} from "./FileClaimButton"
+import { SubmitButton } from "../submitButton/SubmitButton";
 
 export const ClaimStatusCard = () => {
   const classes = Style();
   return (
-    <Grid container className={classes.mainGrid}>
+    <Grid container 
+    className={classes.mainGrid}
+    >
       <Grid item xs={4} sm={4} md={4} lg={4} xl={4}></Grid>
       <Grid
         className={classes.claimStatusGrid}
@@ -22,14 +23,14 @@ export const ClaimStatusCard = () => {
           <h1>Claim Status</h1>
           <form className={classes.form}>
             <TextField
-              sx={{ height: "10px" }}
               className={classes.textField}
               id="outlined-basic"
-              label="Outlined"
+              label="Code"
               variant="outlined"
               size="small"
+              sx={{borderTopRightRadius:"0px"}}
             />
-            <FileClaimButton >sumbit</FileClaimButton>
+            <SubmitButton >sumbit</SubmitButton>
           </form>
         </div>
       </Grid>

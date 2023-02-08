@@ -8,8 +8,8 @@ import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import { CustomButton } from "./CustomButton";
-import { FileClaimButton } from "./FileClaimButton";
+import { CustomButton } from "../customButton/CustomButton";
+import { FileClaimButton } from "../fileClaimButton/FileClaimButton";
 import { Grid } from "@material-ui/core";
 import { Style } from "./style";
 export const Navbar = () => {
@@ -47,7 +47,7 @@ export const Navbar = () => {
               lg={4}
               xl={4}
             >
-              <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+              <AdbIcon sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }} />
               <Typography
                 variant="h6"
                 noWrap
@@ -55,7 +55,7 @@ export const Navbar = () => {
                 href="/"
                 sx={{
                   mr: 2,
-                  display: { xs: "none", md: "flex" },
+                  display: { xs: "flex", md: "flex" },
                   fontFamily: "monospace",
                   fontWeight: 700,
                   letterSpacing: ".3rem",
@@ -67,7 +67,10 @@ export const Navbar = () => {
               </Typography>
             </Grid>
             <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
-              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              <Box
+                sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}
+                className={classes.FAQGrid}
+              >
                 {pages.map((page) => (
                   <CustomButton
                     backgroundColor="default"
@@ -79,7 +82,15 @@ export const Navbar = () => {
                 ))}
               </Box>
             </Grid>
-            <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
+            <Grid
+              className={classes.fileClaimGrid}
+              item
+              xs={4}
+              sm={4}
+              md={4}
+              lg={4}
+              xl={4}
+            >
               <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Open settings">
                   <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
