@@ -1,12 +1,16 @@
 import "./App.css";
 import { Box } from "@mui/material";
-import { Dashboard, Navbar } from "./components";
+import { ClaimStatus, Dashboard, Navbar } from "./components";
 
 function App() {
   return (
-    <Box sx={{ backgroundColor: "#c4c4c4" }}>
-      <Dashboard/>
-      {/* <Navbar/> */}
+    <Box 
+    // sx={{ backgroundColor: "#F3F6F9" }}
+    >
+       {/* <Navbar/> */}
+
+      {/* <Dashboard/> */}
+      <ClaimStatus/>
     </Box>
   );
 }

@@ -7,6 +7,6 @@ export const Style = makeStyles(() => ({
     alignSelf: "center",
     marginBottom: "0px",
     paddingRight: "10px",
-    color: "#7E8299",
+    color: "#f4f6f9",
   },
 }));
