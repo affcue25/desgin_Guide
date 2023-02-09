@@ -4,9 +4,9 @@ export const Style = makeStyles(() => ({
     backgroundColor: "white",
   },
   title: {
-    alignSelf: "center",
-    marginBottom: "0px",
     paddingRight: "10px",
-    color: "#f4f6f9",
+    color: "black",
+    fontSize:"18px",
+    textAlign:"center"
   },
 }));

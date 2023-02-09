@@ -4,6 +4,17 @@ export const Style = makeStyles(() => ({
     fontSize:"24px",
     fontWeight:"bold",
     fontFamily:"sans-serif",
-    color:"#black"
+    color:"#black",
+    margin:"0px",
+    marginTop:"10px"
+ },
+ chartValues :{
+   display:"flex",
+   justifyContent:"space-evenly"
+ },
+ height:{
+  height:"500px"
  }
+
+
 }));

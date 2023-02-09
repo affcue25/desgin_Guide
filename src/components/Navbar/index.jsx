@@ -33,13 +33,7 @@ export const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}></Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
-            <Typography
-              variant="subtitle2"
-              className={classes.title}
-              gutterBottom
-            >
-              Admin
-            </Typography>
+            <h2 className={classes.title}>Admin</h2>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar

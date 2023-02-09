@@ -1,17 +1,24 @@
 import "./App.css";
-import { Box } from "@mui/material";
-import { ClaimStatus, Dashboard, Navbar } from "./components";
+import { Box, Grid } from "@mui/material";
+import { Dashboard, Navbar, SideBar } from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Box 
-    // sx={{ backgroundColor: "#F3F6F9" }}
-    >
-       {/* <Navbar/> */}
-
-      {/* <Dashboard/> */}
-      <ClaimStatus/>
-    </Box>
+    <BrowserRouter>
+      <Box>
+        <Navbar />
+        <Grid container>
+          <Grid item xs={6} sm={2} md={2} lg={2} xl={2}>
+            <SideBar/>
+          </Grid>
+        <Routes>
+          <Route path="/" exact element={<Dashboard />} />
+        </Routes>
+          <Grid item xs={6} sm={3} md={10} lg={10} xl={10}></Grid>
+        </Grid>
+      </Box>
+    </BrowserRouter>
   );
 }
 
