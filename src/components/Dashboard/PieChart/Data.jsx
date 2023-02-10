@@ -1,32 +1,32 @@
 export const data=[
-    {
-      "id": "go",
-      "label": "go",
-      "value": 381,
-      "color": "hsl(42, 70%, 50%)"
-    },
-    {
-      "id": "python",
-      "label": "python",
-      "value": 593,
-      "color": "hsl(27, 70%, 50%)"
-    },
-    {
-      "id": "haskell",
-      "label": "haskell",
-      "value": 510,
-      "color": "hsl(342, 70%, 50%)"
-    },
-    {
-      "id": "rust",
-      "label": "rust",
-      "value": 580,
-      "color": "hsl(332, 70%, 50%)"
-    },
-    {
-      "id": "make",
-      "label": "make",
-      "value": 256,
-      "color": "hsl(147, 70%, 50%)"
-    }
-  ]
+  {
+    "id": "java",
+    "label": "java",
+    "value": 540,
+    "color": "hsl(213, 70%, 50%)"
+  },
+  {
+    "id": "make",
+    "label": "make",
+    "value": 417,
+    "color": "hsl(307, 70%, 50%)"
+  },
+  {
+    "id": "scala",
+    "label": "scala",
+    "value": 306,
+    "color": "hsl(237, 70%, 50%)"
+  },
+  {
+    "id": "stylus",
+    "label": "stylus",
+    "value": 67,
+    "color": "hsl(78, 70%, 50%)"
+  },
+  {
+    "id": "sass",
+    "label": "sass",
+    "value": 171,
+    "color": "hsl(328, 70%, 50%)"
+  }
+]

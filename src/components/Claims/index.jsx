@@ -1,12 +1,11 @@
-import { Padding } from '@mui/icons-material'
 import { Card, Grid, MenuItem, Select, TextField, Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import React, { useCallback, useState } from 'react'
+import React, { useState } from 'react'
 import Button from '@mui/material/Button';
 import DataTable from './DataTable';
 
 
-const Claim = () => {
+export const Claims = () => {
     const [dateFrom, setDateFrom] = useState('');
 
     const handleDateFrom = (event) => {
@@ -47,7 +46,7 @@ const Claim = () => {
   
   return (
 <Box> 
-    <Card sx={{padding:"25px", bgcolor:"#F1F0F4"}}>
+    <Card sx={{padding:"25px", bgcolor:"#F4F6F9"}}>
     <Card sx={{padding:"15px"}}>
         <h3>Claims</h3>
         <h5>Showing All Claims</h5>
@@ -214,5 +213,3 @@ const Claim = () => {
 
 </Box>  )
 } 
-
-export default Claim

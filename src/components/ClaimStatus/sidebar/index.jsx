@@ -42,7 +42,7 @@ export function SideBar(props) {
   );
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex"}}>
       <CssBaseline />
       <AppBar
         position="fixed"
@@ -64,7 +64,7 @@ export function SideBar(props) {
             display: { xs: "none", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth,
+              width: "16%",
             },
           }}
           open
