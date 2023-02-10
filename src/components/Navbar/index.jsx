@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import TemporaryDrawer from "./Drawer";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -33,7 +34,7 @@ export const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}></Box>
 
           <Box sx={{ flexGrow: 0, display: { xs: "flex", md: "flex" } }}>
-            <h2 className={classes.title}>Admin</h2>
+            <TemporaryDrawer/>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
