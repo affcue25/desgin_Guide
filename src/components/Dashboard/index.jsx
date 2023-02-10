@@ -1,9 +1,8 @@
 import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
 import { Style } from "./style";
 import React from "react";
-import { RevenueGraph } from "./RevenueGraph";
-import { data } from "./Data";
-import { Card } from "@material-ui/core";
+import { RevenueGraph } from "./RevenueGraph/RevenueGraph";
+import { data } from "./RevenueGraph/Data"; 
 
 export const Dashboard = () => {
   const classes = Style();
