@@ -1,14 +1,9 @@
-import {
-  FormControl,
-  Grid,
-  InputLabel,
-  MenuItem,
-  Select,
-} from "@mui/material";
+import { FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
 import { Style } from "./style";
 import React from "react";
 import { RevenueGraph } from "./RevenueGraph";
-import {data} from "./Data"
+import { data } from "./Data";
+import { Card } from "@material-ui/core";
 
 export const Dashboard = () => {
   const classes = Style();
@@ -19,11 +14,11 @@ export const Dashboard = () => {
   };
 
   return (
-    <Grid container sx={{backgroundColor:"#E4E6EF"}}>
+    <Grid container sx={{ backgroundColor: "#E4E6EF" }}>
       <Grid item xs={6} sm={3} md={3} lg={2} xl={2}>
         {/* <SideBar /> */}
       </Grid>
-      <Grid item xs={6} sm={9} md={9} lg={10} xl={10}>
+      <Grid item xs={6} sm={5} md={5} lg={5} xl={5}>
         <p className={classes.title}>Dashboard</p>
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-select-small">Revenue</InputLabel>
@@ -55,10 +50,10 @@ export const Dashboard = () => {
           </Select>
         </FormControl>
         <div className={classes.height}>
-
-        <RevenueGraph data={data}/>
+          <RevenueGraph data={data} />
         </div>
       </Grid>
+      <Grid item xs={6} sm={4} md={4} lg={5} xl={5}></Grid>
     </Grid>
   );
 };
