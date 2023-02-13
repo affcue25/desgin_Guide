@@ -3,3 +3,4 @@ export {Navbar } from "./Navbar/index"
 export {ClaimStatus} from "./ClaimStatus/index"
 export {SideBar} from "./ClaimStatus/sidebar/index"
 export {Claims} from "./Claims/index"
+export {CreateAccount} from './CreateAccount/index'
