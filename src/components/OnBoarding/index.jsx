@@ -24,66 +24,69 @@ export const OnBoarding = () => {
     const classes = Style();
 
     return (
-        <Grid container
-            sx={{ backgroundColor: "#F4F6F9" }}
-        >
-            <Grid item xs={6} sm={2} md={3} lg={2} xl={2}>
-                <Box sx={{ display: 'flex' }}>
-                    <CssBaseline />
+        <>
+            <Grid container
+                sx={{ backgroundColor: "#F4F6F9" }}
+            >
+                <Grid item xs={6} sm={2} md={3} lg={2} xl={2}>
+                    <Box sx={{ display: 'flex' }}>
+                        <CssBaseline />
 
-                    <Drawer
-                        sx={{
-                            width: drawerWidth,
-                            flexShrink: 0,
-                            '& .MuiDrawer-paper': {
+                        <Drawer
+                            sx={{
                                 width: drawerWidth,
-                                boxSizing: 'border-box',
-                            },
-                        }}
-                        variant="permanent"
-                        anchor="left"
-                    >
-                        <Toolbar />
-                        <Divider />
-                        <List>
-                            <p className={classes.margin}>Onboarding</p>
-                            <ProgressBar />
-                            <p className={classes.margin}>2/9  tasks are complete</p>
+                                flexShrink: 0,
+                                '& .MuiDrawer-paper': {
+                                    width: drawerWidth,
+                                    boxSizing: 'border-box',
+                                },
+                            }}
+                            variant="permanent"
+                            anchor="left"
+                        >
+                            <Toolbar />
+                            <Divider />
+                            <List>
+                                <p className={classes.margin}>Onboarding</p>
+                                <ProgressBar />
+                                <p className={classes.margin}>2/9  tasks are complete</p>
 
-                            {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                                <ListItem key={text} disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                                        </ListItemIcon>
-                                        <ListItemText primary={text} />
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
-                        </List>
-                        <Divider />
-                        <List>
-                            {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                                <ListItem key={text} disablePadding>
-                                    <ListItemButton>
-                                        <ListItemIcon>
-                                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                                        </ListItemIcon>
-                                        <ListItemText primary={text} />
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
-                        </List>
-                    </Drawer>
+                                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+                                    <ListItem key={text} disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon>
+                                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                            </ListItemIcon>
+                                            <ListItemText primary={text} />
+                                        </ListItemButton>
+                                    </ListItem>
+                                ))}
+                            </List>
+                            <Divider />
+                            <List>
+                                {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                                    <ListItem key={text} disablePadding>
+                                        <ListItemButton>
+                                            <ListItemIcon>
+                                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                            </ListItemIcon>
+                                            <ListItemText primary={text} />
+                                        </ListItemButton>
+                                    </ListItem>
+                                ))}
+                            </List>
+                        </Drawer>
 
-                </Box>
+                    </Box>
+                </Grid>
+
+                <Grid item xs={6} sm={3} md={9} lg={10} xl={10}>
+                    <ClaimEmail />
+                    <StepperRole />
+                </Grid>
             </Grid>
+        </>
 
-            <Grid item xs={6} sm={3} md={9} lg={10} xl={10}>
-                <ClaimEmail/>
-                <StepperRole />
-            </Grid>
-        </Grid>
 
     );
 }
