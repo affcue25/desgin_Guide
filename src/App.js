@@ -1,13 +1,13 @@
 import "./App.css";
 import { Box, Grid } from "@mui/material";
-import { Claims, ClaimStatus, CreateAccount, Dashboard, Navbar, SideBar } from "./components";
+import { Claims, ClaimStatus, CreateAccount, Dashboard, Navbar, OnBoarding, SideBar } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <Box>
-        <CreateAccount/>
+        <OnBoarding/>
         {/* <Navbar />
         <Grid container
          sx={{ backgroundColor: "#F4F6F9" }}
