@@ -3,7 +3,7 @@ import React from 'react'
 import { Style } from "./style";
 
 
-export const ClaimEmail = () => {
+export const PaymentEmail = () => {
     const classes = Style();
 
     return (
@@ -23,7 +23,7 @@ export const ClaimEmail = () => {
                         <div className={classes.textField}>
 
                             <Typography variant="h4" gutterBottom>
-                                Claims Email Contact
+                                Billing Email Contact
                             </Typography>
                         </div>
                         <p className={classes.marginBottom}>
@@ -37,8 +37,9 @@ export const ClaimEmail = () => {
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="Required"
-                                defaultValue="Hello World"
+                                label="Belling Email Address"
+                                defaultValue=""
+                                placeholder='Billing email address'
                                 size='small'
                             />
                         </div>

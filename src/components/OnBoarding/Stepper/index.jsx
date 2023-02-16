@@ -10,10 +10,10 @@ const steps = [
     'Create an ad',
 ];
 
-export const StepperRole = () => {
+export const StepperRole = ({stepperValue}) => {
     return (
-        <Box sx={{ width: '100%',backgroundColor:"white" }}>
-            <Stepper activeStep={1} alternativeLabel>
+        <Box sx={{ width: '100%' }}>
+            <Stepper activeStep={stepperValue} alternativeLabel>
                 {steps.map((label) => (
                     <Step key={label}>
                         <StepLabel>{label}</StepLabel>

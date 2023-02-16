@@ -2,9 +2,7 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import CircularProgress, {
-    circularProgressClasses,
-} from '@mui/material/CircularProgress';
+
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
@@ -54,12 +52,12 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
 //     );
 // }
 
-export const ProgressBar = () => {
+export const ProgressBar = ({stepperValue}) => {
     return (
         <Box sx={{ flexGrow: 1 }}>
             {/* <FacebookCircularProgress /> */}
             <br />
-            <BorderLinearProgress variant="determinate" value={50} />
+            <BorderLinearProgress variant="determinate" value={(stepperValue+1)*25} />
         </Box>
     );
 }

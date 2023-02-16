@@ -7,6 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Box>
+        {/* <CreateAccount/> */}
         <OnBoarding/>
         {/* <Navbar />
         <Grid container
