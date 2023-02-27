@@ -7,8 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Box>
-        {/* <CreateAccount/> */}
-        <OnBoarding/>
+        {/* <CreateAccount */}
+        <OnBoarding />
         {/* <Navbar />
         <Grid container
          sx={{ backgroundColor: "#F4F6F9" }}
@@ -23,11 +23,11 @@ function App() {
               <Route path="/ClaimStatus" exact element={<ClaimStatus />} />
               <Route path="/Claims" exact element={<Claims />} />
 
-            </Routes>
-          </Grid>
-        </Grid> */}
-      </Box>
-    </BrowserRouter>
+            </Routes> */}
+      {/* </Grid> */}
+    {/* </Grid> */}
+      </Box >
+    </BrowserRouter >
   );
 }
 

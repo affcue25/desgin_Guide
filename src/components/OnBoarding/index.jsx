@@ -22,13 +22,16 @@ import { PaymentInfo } from './PaymentInfo';
 import { useState } from 'react';
 import { PaymentEmail } from './PaymentEmail';
 import { SuccessScreen } from './Success';
+import { MerchantProfile } from './MerchantProfile';
+import { DiscoverFeedCard } from './DiscoverFeedCard';
+import { MerchantCategories } from './MerchantCategories';
 
 
 const drawerWidth = 240;
 
 export const OnBoarding = () => {
     const [stepperValue, setStepperValue] = useState(0)
-
+    console.log(stepperValue)
     const previousButton = () => {
         if (stepperValue > 0) {
             setStepperValue((value) => value - 1);
@@ -38,7 +41,7 @@ export const OnBoarding = () => {
         }
     }
     const nextButton = () => {
-        if (stepperValue < 3) {
+        if (stepperValue < 6) {
             setStepperValue((value) => value + 1);
         }
         else {
@@ -46,7 +49,7 @@ export const OnBoarding = () => {
         }
     }
     const skipButton = () => {
-        if (stepperValue < 3) {
+        if (stepperValue < 6) {
             setStepperValue((value) => value + 1);
         }
         else {
@@ -150,7 +153,11 @@ export const OnBoarding = () => {
                     {stepperValue === 0 && <ClaimEmail />}
                     {stepperValue === 1 && <PaymentInfo />}
                     {stepperValue === 2 && <PaymentEmail />}
-                    {stepperValue === 3 && <SuccessScreen/>}
+                    {stepperValue === 3 && <MerchantProfile />}
+                    {stepperValue === 4 && <DiscoverFeedCard />}
+                    {stepperValue === 5 && <MerchantCategories />}
+                    {stepperValue === 6 && <SuccessScreen />}
+
                     <StepperRole stepperValue={stepperValue} />
                 </Grid>
             </Grid>

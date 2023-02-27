@@ -57,7 +57,7 @@ export const ProgressBar = ({stepperValue}) => {
         <Box sx={{ flexGrow: 1 }}>
             {/* <FacebookCircularProgress /> */}
             <br />
-            <BorderLinearProgress variant="determinate" value={(stepperValue+1)*25} />
+            <BorderLinearProgress variant="determinate" value={(stepperValue+1)*14.28} />
         </Box>
     );
 }

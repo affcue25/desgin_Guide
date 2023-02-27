@@ -5,9 +5,12 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
 const steps = [
-    'Select master blaster campaign settings',
-    'Create an ad group',
-    'Create an ad',
+    'Claim Email Contacts',
+    'Payment Information',
+    'Billing Email Contacts',
+    'Merchant Profile',
+    'Discover Feed Card',
+    'Merchant Categories'
 ];
 
 export const StepperRole = ({stepperValue}) => {
