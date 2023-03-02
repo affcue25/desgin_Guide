@@ -8,19 +8,10 @@ export const PaymentInfo = () => {
 
     return (
         <>
+                    <Box className={classes.mainBox}>
+                        <Box sx={{alignSelf:"center"}}>
 
-            <Grid container>
-
-                <Grid item
-                    xs={"none"} sm={3} md={2} lg={2} xl={2}
-
-                >
-                </Grid>
-                <Grid item
-                    xs={6} sm={3} md={6} lg={6} xl={6}
-                >
-                    <Box className={classes.margin}>
-                        <div className={classes.textField}>
+                        {/* <Box className={classes.textField}>
 
                             <Typography variant="h4" gutterBottom>
                                 Site is free,
@@ -32,17 +23,22 @@ export const PaymentInfo = () => {
                                 Here is why.
                             </Typography>
 
-                        </div>
+                        </Box> */}
                         <p className={classes.marginBottom}>
-                            body1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                            blanditiis tenetur unde suscipit, 
+                           This will be used for any plan payments and to collect the Green Package Protection 
+                           insurance premium
                         </p>
-                        <div className={classes.paymentButton}>
-                        <Button variant="contained">Account</Button>
-                        <Button variant="contained">Paypal</Button>
-                        <Button variant="contained">Contained</Button>
-                        </div>
-                        <div className={classes.textField}>
+                        <p className={classes.text2}>
+                            <span>
+                                NOTE: Green package protection is free for you, but we will
+                                still need payment information. Your customers will pay insurance
+                                premium to you with their order payment.
+                            </span>
+                           This will be used for any plan payments and to collect the Green Package Protection 
+                           insurance premium
+                        </p>
+                        
+                        <Box className={classes.textField}>
 
                             <TextField
                             sx={{marginBottom:"1rem"}}
@@ -58,41 +54,24 @@ export const PaymentInfo = () => {
 
                                 required
                                 id="outlined-required"
+                                label="Account number"
+                                size='small'
+                            />
+                            <TextField
+                            sx={{marginBottom:"1rem"}}
+
+                                required
+                                id="outlined-required"
                                 label="Routing number"
-                                defaultValue=""
                                 placeholder='Routing'
                                 size='small'
                             />
-                            <TextField
-                            sx={{marginBottom:"1rem"}}
+                            
+                        </Box>
+                        </Box>
 
-                                required
-                                id="outlined-required"
-                                label="Required"
-                                defaultValue="Hello World"
-                                size='small'
-                            />
-                            <TextField
-                            sx={{marginBottom:"1rem"}}
-
-                                required
-                                id="outlined-required"
-                                label="Required"
-                                defaultValue="Hello World"
-                                size='small'
-                            />
-                        </div>
 
                     </Box>
-                </Grid>
-                <Grid item
-                    xs={"none"} sm={3} md={4} lg={4} xl={4}
-
-                >
-                </Grid>
-
-
-            </Grid>
         </>
 
     )

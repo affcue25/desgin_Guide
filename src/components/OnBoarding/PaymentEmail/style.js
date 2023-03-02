@@ -1,9 +1,11 @@
 import { makeStyles } from "@mui/styles";
 export const Style = makeStyles(() => ({
   margin: {
-    width:"80%",
-    margin:"auto",
-    padding:" 15.8rem 0"
+    width:"100%",
+    height:"35rem",
+    display: "grid",
+    textAlign:"center",
+    alignItems:"center",
   },
   SkipButton:{
     textAlign:"right"
@@ -11,8 +13,9 @@ export const Style = makeStyles(() => ({
   marginBottom: {
     marginBottom:"3rem"
   },
-  // textField:{
-  //   width:"100%",
-  //   textAlignLast:"center"
-  // }
+  textCenter:{
+    width:"100%",
+    textAlign:"center"
+  }
+ 
 }));

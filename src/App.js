@@ -1,12 +1,13 @@
 import "./App.css";
-import { Box, Grid } from "@mui/material";
+import { Box, Card, Grid } from "@mui/material";
 import { Claims, ClaimStatus, CreateAccount, Dashboard, Navbar, OnBoarding, SideBar } from "./components";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Box>
+
+      <Box sx={{backgroundColor:"#fafafa"}}>
         {/* <CreateAccount */}
         <OnBoarding />
         {/* <Navbar />
@@ -26,7 +27,9 @@ function App() {
             </Routes> */}
       {/* </Grid> */}
     {/* </Grid> */}
+
       </Box >
+
     </BrowserRouter >
   );
 }

@@ -6,4 +6,13 @@ export const Style = makeStyles(() => ({
   SkipButton: {
     textAlign: "right"
   },
+  
+  buttonBox :{
+    display: "flex",
+    justifyContent:"space-evenly",
+    marginBottom:"5rem"
+  },
+  progressbar:{
+    marginTop:"5rem"
+  }
 }));

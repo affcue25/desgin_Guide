@@ -1,22 +1,22 @@
 import { makeStyles } from "@mui/styles";
 export const Style = makeStyles(() => ({
-  margin: {
-    width:"80%",
-    margin:"auto",
-    padding:" 6rem 0"
+  mainBox: {
+    height: "35rem",
+    display: "grid",
+    textAlign: "center",
+    alignItems: "center"
   },
- 
+
   marginBottom: {
-    marginBottom:"3rem"
+    marginBottom: "2rem"
   },
-  textField:{
-    width:"100%",
-display:"grid"
+  textField: {
+    width: "100%",
+    display: "grid"
   },
-  paymentButton: {
-    marginBottom:"3rem",
-    width:"70%",
-    display:"flex",
-    justifyContent:"space-evenly",
+  text2 :{
+    textAlign:"justify",
+    marginBottom:"2rem"
   }
+
 }));

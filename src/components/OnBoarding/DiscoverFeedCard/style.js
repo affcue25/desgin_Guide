@@ -1,20 +1,27 @@
 import { makeStyles } from "@mui/styles";
 export const Style = makeStyles(() => ({
-  margin: {
-    width:"80%",
-    margin:"auto",
-    padding:" 11rem 0"
+  box: {
+    height: "35rem",
+    display: "flex",
+    alignItems: "center",
   },
-  SkipButton:{
-    textAlign:"right"
+  SkipButton: {
+    textAlign: "right"
   },
   marginBottom: {
-    marginBottom:"3rem"
+    marginBottom: "3rem"
   },
-yellowColor: {
-  color:"#ffeb3b"
-},
-whiteColor: {
-  color:"white"
-}
+  yellowColor: {
+    color: "#ffeb3b"
+  },
+  whiteColor: {
+    color: "white"
+  },
+  textCenter: {
+    textAlign: "center"
+  },
+  fileCenter: {
+    width: "100%", 
+    textAlign: "-webkit-center"
+  }
 }));

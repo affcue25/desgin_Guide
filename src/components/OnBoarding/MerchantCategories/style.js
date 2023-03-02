@@ -1,9 +1,9 @@
 import { makeStyles } from "@mui/styles";
 export const Style = makeStyles(() => ({
   margin: {
-    width:"80%",
-    margin:"auto",
-    padding:" 6rem 0"
+    marginTop:"5rem",
+    marginBottom:"5rem",
+    
   },
  
   marginBottom: {
@@ -25,6 +25,10 @@ display:"grid"
   },
   box:{
     display:"flex",
-    justifyContent:"space-between"
+    // justifyContent:"space-between",
+  },
+  checkbox:{
+    width: 'calc((100% - 20px)/4)'
+    
   }
 }));

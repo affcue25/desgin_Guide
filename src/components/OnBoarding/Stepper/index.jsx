@@ -5,17 +5,17 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 
 const steps = [
-    'Claim Email Contacts',
-    'Payment Information',
-    'Billing Email Contacts',
+    'Claim Email ',
+    'Payment ',
+    'Billing Email ',
     'Merchant Profile',
     'Discover Feed Card',
-    'Merchant Categories'
+    'Categories'
 ];
 
 export const StepperRole = ({stepperValue}) => {
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%',marginTop:"3rem" }}>
             <Stepper activeStep={stepperValue} alternativeLabel>
                 {steps.map((label) => (
                     <Step key={label}>
