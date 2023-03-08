@@ -4,6 +4,7 @@ import React from "react";
 import { RevenueGraph } from "./RevenueGraph/RevenueGraph";
 import { data } from "./RevenueGraph/Data";
 import { PieChart } from "./PieChart/PieChart";
+import {StatsCard} from "./StatsCard/StatsCard";
 
 export const Dashboard = () => {
   const classes = Style();
@@ -16,6 +17,20 @@ export const Dashboard = () => {
   return (
     <>
       <div style={{ height: "92vh" }}>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={6} lg={3}>
+          <StatsCard title="NEW ACCOUNTS" value={234} progress={58} circleColor="blue" borderLineColor="blue" isIncrease />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3}>
+          <StatsCard title="TOTAL EXPENSES" value={71} progress={62} circleColor="red" borderLineColor="red" />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3}>
+          <StatsCard title="COMPANY VALUE" value={"1,45M"} progress={72} circleColor="orange" borderLineColor="orange" isDollar />
+        </Grid>
+        <Grid item xs={12} md={6} lg={3}>
+          <StatsCard title="NEW EMPLOYEES" value={34} progress={81} circleColor="green" borderLineColor="green" isPlus />
+        </Grid>
+      </Grid>
         <Grid container sx={{ backgroundColor: "#F4F6F9" }}>
           <Grid item xs={6} sm={5} md={8} lg={7} xl={7}>
             <p className={classes.title}>Dashboard</p>
