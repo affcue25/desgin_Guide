@@ -9,7 +9,7 @@ function App() {
 
       <Box sx={{backgroundColor:"#fafafa"}}>
         {/* <CreateAccount */}
-        <OnBoarding />
+        <Dashboard />
         {/* <Navbar />
         <Grid container
          sx={{ backgroundColor: "#F4F6F9" }}
