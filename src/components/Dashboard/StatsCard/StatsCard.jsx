@@ -37,11 +37,11 @@ CircularProgressWithLabel.propTypes = {
   circleColor: PropTypes.string.isRequired,
 };
 
-export const StatsCard = ({ title, value, progress, isIncrease, borderLineColor, circleColor, isDollar, isPlus }) => {
+export const StatsCard = ({ title, value, progress, isIncrease, borderLineColor, circleColor, isDollar, isPlus, leftShadow  }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{boxShadow: leftShadow}}>
       <CardContent sx={{ display: 'flex', flexDirection: 'column' }}>
-        <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: "gray" }}>
+        <Typography gutterBottom variant="subtitle1" component="div" sx={{ color: "gray", fontSize: "0.8rem" }}>
           {title}
         </Typography>
         <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -49,7 +49,7 @@ export const StatsCard = ({ title, value, progress, isIncrease, borderLineColor,
             <IconButton style={{ padding: 0 }}>
               {isIncrease ? <ArrowUpward color="action" /> : isDollar ? <AttachMoney color="action" /> : isPlus ? <Add color="action" /> : <ArrowDownward color="error" />}
             </IconButton>
-            <Typography variant="h4" component="div" sx={{ ml: 1 }}>
+            <Typography variant="h4" component="div" sx={{ ml: 1 , fontWeight: "bold"}}>
               {value} 
             </Typography>
             <Typography variant="h5" component="div" color="GrayText" sx={{ ml: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
